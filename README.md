@@ -1,5 +1,5 @@
 # Portfolio - Maykon Robert
-Projeto desenvolvido com **Bootstrap 4**, **JavaScript** e **Mobile First**.
+Projeto desenvolvido com **Bootstrap 4**, **JavaScript**,**HTML5**,**CSS3** e **Mobile First**.
 
 ### 🚀 Funcionalidades
 - Alternância de tema (Dark/Light Mode).
