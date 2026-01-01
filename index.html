@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Maykon Robert</title>
+</head>
+<body>
+    <nav class="navbar p-2 navbar-expand-md navbar-dark bg-dark sticky-top shadow text-light">
+        <a class="navbar-brand ml-3 font-weight-bold text-light">Maykon Robert</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navegacao">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="#sobre" class="nav-link font-weight-bold m-2 ">Sobre mim</a></li>
+                <li class="nav-item"><a href="#projetos" class="nav-link font-weight-bold m-2">Projetos</a></li>
+                <li class="nav-item"><a href="#tecnologias" class="nav-link font-weight-bold m-2">Tecnologias</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link font-weight-bold m-2" >Contato</a></li>
+                <li class="nav-item">
+                    <div class="nav-link mt-1">
+                        <input type="checkbox" name="change-theme" id="change-theme">
+                        <label for="change-theme" class="dark" >
+                            <i class="fa-solid fa-toggle-off"></i>
+                            <i class="fa-solid fa-toggle-on"></i>
+                        </label>
+                    </div>
+                    
+                </li>
+                
+            </ul>
+        </div>
+        
+    </nav>
+    <main class="container-fluid bg-dark" >
+        <section id="main--perfil" class="row justify-content-center">
+            <div class="p-2 col-md-4 mr-md-2 col-sm-4 text-lg-left text-md-left text-center">
+                <h1 class="text-light">Olá,eu sou o <br> <code class="text-sucess">Maykon Robert</code> </h1>
+                <p class="py-2 text-light lead">Desenvolvedor Front-end | JavaScript | HTML | CSS </p>
+            </div>
+            <div class="p-2 col-lg-3 col-md-3 " id="imagem--perfil">
+                <img class="rounded-circle border border-primary d-none d-md-block" src="img/foto-perfil.png" alt="Maykon Robert">
+            </div>
+        </section>
+        <!-- Seção sobre mim-->
+        <section class="text-light p-5 container" id="sobre">
+            <h1 class="py-5 text-center">Sobre mim</h1>
+            <p class="py-1 lead" id="p--sobre">Desenvolvedor Front-end apaixonado 
+                por transformar ideias em interfaces modernas e funcionais.
+                Utilizo tecnologias como JavaScript, Bootstrap e CSS3 para criar Landing Pages de 
+                alta conversão e sistemas web focados na experiência do usuário. 
+                Meu objetivo é unir design limpo com código otimizado para ajudar 
+                negócios a crescerem no ambiente digital.
+            </p>
+        </section>
+        <!-- Seção Projetos-->
+        <section class="text-black-50 p-5 container-fluid" id="projetos">
+            <h1 class="py-5 text-center text-light">Projetos</h1>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-5 col-sm-8 card bg-dark ">
+                    <div class="card-body card--projetos">
+                        <h4 class="card-title">Pokedex</h4>
+                        <p class="card-text lead" id="p--sobre">
+                            Aplicação desenvolvida em <strong>JavaScript ES6+</strong>  que consome a PokeAPI. O projeto foca no uso de 
+                            Promises e Async/Await para requisições assíncronas, manipulação dinâmica do DOM e 
+                            filtragem de dados em tempo real. Design responsivo estruturado com  <strong>CSS </strong> Grid e Flexbox
+                        </p>
+                        <img class="card-img-bottom border-success" src="img/projetos/pokedex.png" alt="">
+                    </div>
+                    <div class="div--info mb-5">
+                        <a class="btn btn-outline-danger" href="https://mktk11.github.io/desafio-lumis/" rel="noopener noreferrer">Ver mais</a>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-5 col-sm-8 ml-lg-4 mt-lg-0 mt-sm-2 bg-dark">
+                    <div class="card-body card--projetos">
+                        <h4 class="card-title">Buscador de albuns de Musica</h4>
+                        <p class="card-text  text- lead" id="p--sobre">
+                            Aplicação de busca musical que consome a API da Deezer. O projeto foca no tratamento de dados complexos de álbuns e artistas, utilizando 
+                            JavaScript para gerenciar as buscas e com uma vitrine de álbuns responsiva. 
+                            Demonstra domínio em requisições via Fetch API e tratamento de erros de rede.
+                        </p>
+                        <img class="card-img-bottom" src="img/projetos/musical.png" alt="">
+                    </div>
+                    <div class="div--info mb-5">
+                        <a class="btn btn-outline-danger" href="https://mktk11.github.io/Busca-albuns/" target="_blank" rel="noopener noreferrer">Ver mais</a>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-md-5 col-sm-8 ml-md-3 ml-lg-4 mt-lg-0 mt-md-2 mt-sm-2 bg-dark">
+                    <div class="card-body card--projetos">
+                        <h4 class="card-title">Página de login da Empresa Júnior</h4>
+                        <p class="card-text lead" id="p--sobre">
+                            Desenvolvimento da interface de autenticação para a plataforma da <strong>BitwebJr</strong> O projeto prioriza a segurança e a validação de formulários via JavaScript, 
+                            além de seguir uma identidade visual. 
+                            Foco em acessibilidade e semântica HTML para garantir que o acesso ao sistema seja intuitivo.
+                        </p>
+                        <img class="card-img-bottom " src="img/projetos/bitwebjr.png" alt="">
+                    </div>
+                    <div class="div--info mb-5">
+                        <a class="btn btn-outline-danger" href="https://mktk11.github.io/projeto-1-bitwebjr/" target="_blank" rel="noopener noreferrer">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <!-- Seção Tecnologias-->
+        <section class="text-light p-5 container" id="tecnologias" >
+            <h1 class="py-5 text-center">Tecnologias</h1>
+            <div class="row justify-content-center section--tec">
+                <div class="card col-lg-2 col-md-3 col-sm-4  bg-dark mr-3 align-items-center">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Javascript</h4>
+                    </div>
+                    <img class="card-img-bottom" src="img/tecnologias/javascript.png" alt="javascript">
+                </div>
+                <div class="card col-lg-2 col-md-3 col-sm-4 bg-dark mr-3  align-items-center">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Bootstrap</h4>
+                    </div>
+                    <img class="card-img-bottom" src="img/tecnologias/bootstrap.png" alt="Bootstrap">
+                </div>
+                <div class="card col-lg-2 col-md-3 col-sm-4 bg-dark mr-3 mt-lg-0 mt-sm-2 align-items-center">
+                    <div class="card-body">
+                        <h4 class="card-title  text-center">Tailwind CSS</h4>
+                    </div>
+                    <img class="card-img-bottom" src="img/tecnologias/tailwind.png" alt="Tailwind" >
+                </div>
+                <div class="card col-lg-2 col-md-3 col-sm-4 bg-dark mr-3 mt-lg-0 mt-md-0 mt-sm-2  align-items-center">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">HTML</h4>
+                    </div>
+                    <img class="card-img-bottom" src="img/tecnologias/HTML.png" alt="HTML">
+                </div>
+                <div class="card col-lg-2 col-md-3  col-sm-4 bg-dark mt-lg-0 mr-3 mt-md-0 mt-sm-2 align-items-center">
+                    <div class="card-body">
+                        <h4 class="card-title  text-center">CSS3</h4>
+                    </div>
+                    <img class="card-img-bottom" src="img/tecnologias/CSS.png" alt="CSS">
+                </div>
+            </div>
+        </section>
+        <!--Seção de Contato-->
+        <section class="text-light p-5 container" id="contato">
+            <h1 class="py-5 text-center">Contato</h1>
+            <div class="row justify-content-center">
+                <div class="col-md-5 text-center mb-5">
+                    <p class="lead">Vamos trabalhar juntos? Me encontre nas redes:</p>
+                    <div class="d-flex justify-content-around mt-4">
+                        <a href="https://linkedin.com/in/maykon-valentim" target="_blank" class="text-info h2"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/mktk11" target="_blank" class="text-primary h2"><i class="fa-brands fa-github"></i></a>
+                        <a href="mailto:vigilanciavalentim@gmail.com?subject=Oportunidade de Freelancer&body=Olá Maykon, vi seu portfólio e gostaria de conversar sobre um projeto." class="text-danger h2"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-5 text-center ">
+                    <p class="lead">
+                        E-mail: vigilanciavalentim@gmail.com
+                    </p>
+                </div>
+            </div>
+            
+            
+        </section>
+    </main>
+    <footer class="bg-dark text-light py-4 border-top border-secondary">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="mb-1">&copy; 2026 Maykon Robert - Desenvolvedor Front-end</p>
+                    <small class="text-muted">Desenvolvido com Bootstrap 4,CSS3,HTML5 e JavaScript</small>
+                </div>
+            </div>
+            <div class="mt-3">
+                <a href="https://github.com/mktk11" target="_blank" class="text-light mx-2"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-light mx-2"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/9729da2774.js" crossorigin="anonymous"></script>
+</body>
+</html>

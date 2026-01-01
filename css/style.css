@@ -1,0 +1,149 @@
+/*@keyframes animacao-nav{
+    from{
+        background-color: rgb(33, 37, 41);
+    }
+    to{
+        background-color: whitesmoke;
+    }
+}
+#exemplo{
+    background-color: rgb(33, 37, 41);
+    animation-name: animacao-nav;
+    animation-duration: 5s;
+}*/
+/*Configuração inicial*/
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow: auto;
+}
+
+:root{
+    --texto_projetos : rgb(216, 87, 109)
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* O main do portfólio com ajustes de texto,transição,animação e foto de perfil*/
+
+/* Temas */
+
+.bg-dark > div > ul > li > div > label > .fa-toggle-on{
+    display:none
+}
+.bg-dark > div > ul > li > div > label > .fa-toggle-off{
+    display: block;
+}
+
+.bg-primary > div > ul > li > div > label > .fa-toggle-off{
+    display:none
+}
+.bg-primary > div > ul > li > div > label > .fa-toggle-on{
+    display:block
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+/* Transição */
+section,h2,p{
+    transition: 0.3s ease;
+}
+main.container {
+    transition: transform 0.3s ease;
+}
+#imagem--perfil{
+    display: flex;
+    transition: 0.3s ease;
+}
+.projetos{
+    transition: transform 0.3s ease-in-out;
+}
+.section--tec{
+    transition: transform 0.5s ease;
+}
+body, main, .card, .navbar, h1, p {
+    transition: background-color 0.4s ease, color 0.4s ease ;
+}
+/* Deslocamento */
+
+section,h2,p:hover{
+    transform: translateX(-5px);
+}
+#imagem--perfil > img:hover{
+    width: 90%;
+}
+main.container > p:hover {
+    transform: translateY(-5px);
+}
+.card--projetos > img:hover{
+    width: 115%;
+    transform: translateX(-35px);
+}
+.section--tec > div > img:hover{
+    width: 110%;
+}
+/*Demais ajustes*/
+
+.fa-toggle-off{
+    color: white;
+    font-size: xx-large;
+}
+.fa-toggle-on{
+    font-size: xx-large;
+}
+main{
+    width: 100%;
+}
+
+/*#main--perfil{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 0% 50%;
+}*/
+#imagem--perfil,img{
+    justify-content: center;
+    margin-left: 2%;
+}
+#p--sobre{
+    text-align: center;
+    font-weight: 400;
+}
+.div--info{
+    display: flex;
+    justify-content: center;
+}
+.div--info a{
+    width: 90%;
+}
+.card{
+    border-color: var(--texto_projetos);
+}
+.card--projetos{
+    color: var(--texto_projetos);
+    border-color: var(--texto_projetos);
+}
+.section--tec {
+    color: var(--texto_projetos);
+}
+.section--tec > div > img{
+    width: 120px;
+}
+.section--tec > div > .card-body{
+    padding: 1px;
+}
+
+
+/* Media queries */
+
+@media (max-width:576px){
+    html{
+        overflow-x: hidden;
+    }
+}
